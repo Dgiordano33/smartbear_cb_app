@@ -16,7 +16,7 @@ class App extends Component {
     Chart.defaults.global.defaultFontColor = '#000';
     Chart.defaults.global.defaultFontSize = 16;
 
-    this.state = {historicalData: null, currency: "PHP"}
+    this.state = {historicalData: null, currency: "USD"}
     this.onCurrencySelect = this.onCurrencySelect.bind(this)
   }
 
@@ -84,14 +84,19 @@ class App extends Component {
               )}
             </select>
             {
-              this.state.currency !== 'PHP' && (<div>
-                <a href="#" className="link" onClick={() => this.setCurrency('PHP')} style={{color: "black", fontSize: 16, fontFamily: 'Bungee'}}> [CLICK HERE TO RESET] </a>
+              this.state.currency !== 'USD' && (<div>
+                <a href="#" className="link" onClick={() => this.setCurrency('USD')} style={{color: "black", fontSize: 16, fontFamily: 'Bungee'}}> [CLICK HERE TO RESET] </a>
               </div>)
             }
           </div>
 
           <div style={{marginTop: 10}}>
             <Line data={this.formatChartData()} height={250} />
+          </div>
+
+          <div className="subheader-body">
+            <span className="subheader"> Written by <a className="link" href="https://markonsoftware.com">@MarkFChavez</a>. </span>
+            <span className="subheader"> Powered by <a className="link" target="_blank" href="https://www.coindesk.com/price/">CoinDesk</a>. </span>
           </div>
         </div>
       )
