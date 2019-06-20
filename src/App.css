@@ -1,8 +1,8 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bungee', cursive;
+  font-family: 'Acme', sans-serif;
 }
 
-span.bungee { font-family: 'Bungee', cursive; }
+span.bungee { font-family: 'Acme', sans-serif; }
 
 .app {
   max-width: 720px;
@@ -10,8 +10,8 @@ span.bungee { font-family: 'Bungee', cursive; }
   text-align: center;
 }
 
-.header { font-size: 60px; font-family: 'Bungee', cursive; }
-.subheader { font-size: 20px; font-family: 'Bungee', cursive; }
+.header { font-size: 60px; font-family: 'Acme', sans-serif; }
+.subheader { font-size: 20px; font-family: 'Acme', sans-serif; }
 
 a.link {
   text-decoration: none;
@@ -31,7 +31,7 @@ a.link:hover {
   background-image: none;
   -webkit-appearance: none;
   font-size: 30px;
-  font-family: 'Bungee', cursive;
+  font-family: 'Acme', sans-serif;
   cursor: pointer;
   color: #ff1769;
 }
