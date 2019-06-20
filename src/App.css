@@ -39,3 +39,30 @@ a.link:hover {
 .select-container select:focus {
   outline: none;
 }
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body-container h2 {
+  text-decoration: underline;
+}
+
+.listColumn {
+  width: 100%;
+}
+
+.listColumn table {
+  width: 100%;
+  font-size: 14px; font-family: 'Helvetica', cursive;
+}
+
+.listColumn tr {
+  width: 100%;
+}
+
+.listColumn td {
+  padding-top: 10px;
+}
