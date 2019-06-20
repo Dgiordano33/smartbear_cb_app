@@ -78,7 +78,7 @@ class App extends Component {
           <Header title="BITCOIN PRICE INDEX" />
 
           <div className="select-container">
-            <span style={{fontSize: 18, fontFamily: 'Bungee'}}> Select your currency: </span>
+            <span style={{fontSize: 18, fontFamily: 'Acme'}}> Select your currency: </span>
             <select value={this.state.currency} onChange={this.onCurrencySelect}>
               {currencies.map((obj, index) =>
                 <option key={`${index}-${obj.country}`} value={obj.currency}> {obj.currency} </option>
