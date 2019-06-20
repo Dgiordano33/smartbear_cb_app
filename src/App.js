@@ -5,6 +5,7 @@ import _ from 'lodash';
 import { Line, Chart } from 'react-chartjs-2';
 import moment from 'moment';
 import currencies from './supported-currencies.json';
+import BPIList from './components/BPIList';
 
 console.log(currencies)
 
@@ -89,13 +90,18 @@ class App extends Component {
               </div>)
             }
           </div>
-
-          <div style={{marginTop: 10}}>
-            <Line data={this.formatChartData()} height={250} />
-          </div>
+            <div className="body-container">
+              <div style={{marginTop: 10}}>
+                <Line data={this.formatChartData()} height={250} />
+              </div>
+              <div>
+                <h2>Dates</h2>
+                <BPIList data={this.state.historicalData} currency={this.state.currency}/>
+              </div>
+            </div>
+          
 
           <div className="subheader-body">
-            <span className="subheader"> Written by <a className="link" href="https://markonsoftware.com">@MarkFChavez</a>. </span>
             <span className="subheader"> Powered by <a className="link" target="_blank" href="https://www.coindesk.com/price/">CoinDesk</a>. </span>
           </div>
         </div>
