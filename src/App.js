@@ -75,15 +75,15 @@ class App extends Component {
     if (this.state.historicalData) {
       return (
         <div className="app">
-          <Header title="BITCOIN PRICE INDEX" />
+          <Header title="USD BITCOIN PRICE INDEX" />
 
           <div className="select-container">
-            <span style={{fontSize: 18, fontFamily: 'Archivo Black'}}> Select your currency: </span>
-            <select value={this.state.currency} onChange={this.onCurrencySelect}>
+            {/* <span style={{fontSize: 18, fontFamily: 'Archivo Black'}}> Select your currency: </span> */}
+            {/* <select value={this.state.currency} onChange={this.onCurrencySelect}>
               {currencies.map((obj, index) =>
                 <option key={`${index}-${obj.country}`} value={obj.currency}> {obj.currency} </option>
               )}
-            </select>
+            </select> */}
             {
               this.state.currency !== 'USD' && (<div>
                 <a href="#" className="link" onClick={() => this.setCurrency('USD')} style={{color: "black", fontSize: 16, fontFamily: 'Archivo Black'}}> [CLICK HERE TO RESET] </a>
