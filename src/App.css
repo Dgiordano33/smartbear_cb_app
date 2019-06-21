@@ -1,8 +1,8 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-span.bungee { font-family: 'Acme', sans-serif; }
+span.bungee { font-family: 'Archivo Black', sans-serif; }
 
 .app {
   max-width: 720px;
@@ -10,8 +10,12 @@ span.bungee { font-family: 'Acme', sans-serif; }
   text-align: center;
 }
 
-.header { font-size: 60px; font-family: 'Acme', sans-serif; }
-.subheader { font-size: 20px; font-family: 'Acme', sans-serif; }
+.header { 
+  font-size: 40px; 
+  font-family: 'Archivo Black', sans-serif; 
+  color: #ff1769;
+}
+.subheader { font-size: 20px; font-family: 'Archivo Black', sans-serif; }
 
 a.link {
   text-decoration: none;
@@ -23,6 +27,12 @@ a.link:hover {
   border-bottom: 2px solid #000;
 }
 
+.select-container {
+  margin-top: 20px;
+  border-top: 1px solid lightgrey;
+  padding-top: 20px;
+}
+
 .select-container select {
   padding: 10px;
   border: none;
@@ -31,9 +41,12 @@ a.link:hover {
   background-image: none;
   -webkit-appearance: none;
   font-size: 30px;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   cursor: pointer;
   color: #ff1769;
+  border: 1px solid #ff1769;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .select-container select:focus {
