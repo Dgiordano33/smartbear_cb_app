@@ -14,11 +14,42 @@
   },
   "main": "src/electron-starter.js",
   "scripts": {
+    "postinstall": "install-app-deps",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron": "electron ."
+    "electron": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "yourappid",
+    "extends": null,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +67,8 @@
     ]
   },
   "devDependencies": {
-    "electron": "^5.0.4"
+    "electron": "^5.0.4",
+    "electron-builder": "^20.43.0",
+    "typescript": "^3.5.2"
   }
 }
