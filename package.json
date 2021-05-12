@@ -6,7 +6,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "chart.js": "^2.7.1",
+    "chart.js": "^2.9.4",
     "lodash": "^4.17.4",
     "moment": "^2.19.4",
     "react-chartjs": "^0.8.0",
